@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Read More or Less More using Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="icon">
+                <img src="01.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Courier</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, aperiam! Accusantium cumque corrupti, autem molestias ipsum doloremque totam veniam enim doloribus officiis, nemo obcaecati ex iure nam deleniti maiores quisquam a saepe quaerat, aspernatur aliquam atque. Placeat, id nam. Architecto cumque illo doloremque doloribus dolores error ducimus laborum iure reiciendis similique nisi, commodi quis quibusdam, aliquam provident repellat, temporibus fuga.</p>
+            </div>
+            <a class="more"></a>
+        </div>
+
+        <div class="card">
+            <div class="icon">
+                <img src="assets/02.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Marketplace</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum recusandae iusto maiores dicta saepe amet laboriosam blanditiis nam quibusdam, nostrum non ipsa sapiente asperiores nobis quaerat pariatur, id rerum voluptatem minus ex nulla sunt quas. Ut minima nobis ducimus libero fugit quidem architecto debitis, ea animi dicta. Amet, culpa!</p>
+            </div>
+            <a class="more"></a>
+        </div>
+
+        <div class="card">
+            <div class="icon">
+                <img src="assets/03.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Analytics</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod soluta maxime voluptatem vel asperiores qui libero! Harum ut suscipit dicta ex similique amet culpa facilis excepturi dolorem, fuga incidunt corporis quis dignissimos cupiditate asperiores neque inventore corrupti fugit aspernatur maiores. Dicta rerum voluptate at corrupti?</p>
+            </div>
+            <a class="more"></a>
+        </div>
+
+        <div class="card">
+            <div class="icon">
+                <img src="assets/04.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Warehouse</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, aperiam! Accusantium cumque corrupti, autem molestias ipsum doloremque totam veniam enim doloribus officiis, nemo obcaecati ex iure nam deleniti maiores quisquam a saepe quaerat, aspernatur aliquam atque. Placeat, id nam. Architecto cumque illo doloremque doloribus dolores error ducimus laborum iure reiciendis similique nisi, commodi quis quibusdam, aliquam provident repellat, temporibus fuga.</p>
+            </div>
+            <a class="more"></a>
+        </div>
+
+        <div class="card">
+            <div class="icon">
+                <img src="assets/05.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Delivery</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum recusandae iusto maiores dicta saepe amet laboriosam blanditiis nam quibusdam, nostrum non ipsa sapiente asperiores nobis quaerat pariatur, id rerum voluptatem minus ex nulla sunt quas. Ut minima nobis ducimus libero fugit quidem architecto debitis, ea animi dicta. Amet, culpa!</p>
+            </div>
+            <a class="more"></a>
+        </div>
+
+        <div class="card">
+            <div class="icon">
+                <img src="assets/06.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Shipping</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod soluta maxime voluptatem vel asperiores qui libero! Harum ut suscipit dicta ex similique amet culpa facilis excepturi dolorem, fuga incidunt corporis quis dignissimos cupiditate asperiores neque inventore corrupti fugit aspernatur maiores. Dicta rerum voluptate at corrupti?</p>
+            </div>
+            <a class="more"></a>
+        </div>
+    </div>
+    <script>
+        let more = document.querySelectorAll('.more');
+        for (let i = 0; i<more.length; i++){
+            more [i].addEventListener('click', function (){
+                more [i].parentNode.classList.toggle('active')
+            })
+        }
+    </script>
+</body>
+</html>
